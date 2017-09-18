@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">kotlin_myshare</string>
+    <string name="share_empty_tip">分享內容不能为空</string>
+    <string name="share_channel_none">没有该分享渠道</string>
+
+    <!--微信-->
+    <string name="share_no_weixin_client">分享失败，请先安装微信</string>
+
+    <!--分享结果-->
+    <string name="share_success">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_cancel">分享取消</string>
+
+    <string name="share_weibosdk_auth_success">授权成功</string>
+    <string name="share_weibosdk_auth_failed">授权失败</string>
+    <string name="share_weibosdk_auth_canceled">取消授权</string>
+    <string name="share_no_weibo_client">分享失败，请先安装微博客户端</string>
+
+
+    <!-- share channel -->
+    <string name="share_channel_weixin_friend">微信</string>
+    <string name="share_channel_weixin_circle">朋友圈</string>
+    <string name="share_channel_weibo">微博</string>
+    <string name="share_channel_qq">QQ好友</string>
+    <string name="share_channel_qzone">QQ空间</string>
+    <string name="share_channel_sms">短信</string>
+    <string name="share_channel_email">邮箱</string>
+    <string name="share_channel_system">系统分享</string>
+    <string name="share_channel_more">更多</string>
+
+
+    <!-- saveBitmap -->
+    <string name="share_save_bitmap_failed">图片保存失败</string>
+    <string name="share_save_bitmap_no_sdcard">SD卡未挂载</string>
+
+    <string name="show_share_dialog">显示分享界面</string>
+
+
+
+
+
+
+    <string name="share_qq">调用QQ分享</string>
+    <string name="share_weixin">调用微信分享</string>
+    <string name="share_wxcircle">调用朋友圈分享</string>
+    <string name="share_weibo">调用微博分享</string>
+    <string name="share_qzone">调用QZone分享</string>
+
+    <string name="share_bigimage">分享大图</string>
+    <string name="weixin_key">wx6a097d8926495260</string>
+
+    <!-- QQ -->
+    <string name="tencent_qq_appid">222222</string>
+</resources>

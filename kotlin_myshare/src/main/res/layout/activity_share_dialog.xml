@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="分享到"
+            android:textColor="#333333"
+            android:textSize="17sp"/>
+
+    <View
+            android:id="@+id/title_sep"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#8d8d8d"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/share_recy"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
