@@ -51,4 +51,5 @@
 
     <!-- QQ -->
     <string name="tencent_qq_appid">222222</string>
+    <string name="share_to">分享到</string>
 </resources>
