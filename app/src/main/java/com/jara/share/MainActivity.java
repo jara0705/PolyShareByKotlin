@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = view.getId();
         switch (id) {
             case R.id.show_share:
-                ShareUtil.INSTANCE.showShareDialog(this, entity, Constant.REQUEST_CODE);
+                ShareUtil.showShareDialog(this, entity, Constant.REQUEST_CODE);
                 break;
         }
     }
