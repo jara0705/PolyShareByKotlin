@@ -131,31 +131,31 @@ class ShareDialogActivity : ShareBaseActivity() {
     }
 
     fun shareByQQ() {
-        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_QQ, getShareData(Constant.SHARE_CHANNEL_QQ), Constant.REQUEST_CODE);
+        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_QQ, getShareData(Constant.SHARE_CHANNEL_QQ), Constant.REQUEST_CODE)
     }
 
     fun shareByQZone() {
-        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_QZONE, getShareData(Constant.SHARE_CHANNEL_QZONE), Constant.REQUEST_CODE);
+        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_QZONE, getShareData(Constant.SHARE_CHANNEL_QZONE), Constant.REQUEST_CODE)
     }
 
     fun shareByWeixinFriend() {
-        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_WEIXIN_FRIEND, getShareData(Constant.SHARE_CHANNEL_WEIXIN_FRIEND), Constant.REQUEST_CODE);
+        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_WEIXIN_FRIEND, getShareData(Constant.SHARE_CHANNEL_WEIXIN_FRIEND), Constant.REQUEST_CODE)
     }
 
     fun shareByWeixinCircle() {
-        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_WEIXIN_CIRCLE, getShareData(Constant.SHARE_CHANNEL_WEIXIN_CIRCLE), Constant.REQUEST_CODE);
+        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_WEIXIN_CIRCLE, getShareData(Constant.SHARE_CHANNEL_WEIXIN_CIRCLE), Constant.REQUEST_CODE)
     }
 
     fun shareBySms() {
-        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_SMS, getShareData(Constant.SHARE_CHANNEL_SMS), Constant.REQUEST_CODE);
+        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_SMS, getShareData(Constant.SHARE_CHANNEL_SMS), Constant.REQUEST_CODE)
     }
 
     fun shareByEmail() {
-        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_EMAIL, getShareData(Constant.SHARE_CHANNEL_EMAIL), Constant.REQUEST_CODE);
+        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_EMAIL, getShareData(Constant.SHARE_CHANNEL_EMAIL), Constant.REQUEST_CODE)
     }
 
     fun shareBySystem() {
-        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_SYSTEM, getShareData(Constant.SHARE_CHANNEL_SYSTEM), Constant.REQUEST_CODE);
+        ShareUtil.startShare(this, Constant.SHARE_CHANNEL_SYSTEM, getShareData(Constant.SHARE_CHANNEL_SYSTEM), Constant.REQUEST_CODE)
     }
 
     fun getShareData(shareChannel: Int): ShareEntity? {

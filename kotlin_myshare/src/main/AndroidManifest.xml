@@ -9,6 +9,12 @@
                   android:screenOrientation="portrait"
                   android:theme="@style/ShareDialogTheme">
         </activity>
+        <activity
+                android:name=".ShareHandlerActivity"
+                android:configChanges="orientation|keyboardHidden"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent"/>
     </application>
 
 </manifest>
