@@ -24,7 +24,6 @@ object Network {
         return service
     }
 
-    @JvmStatic
     fun initService() {
         val retrofit = Retrofit.Builder()
                 .baseUrl("http://www.baidu.com")

@@ -11,7 +11,6 @@ import com.jara.kotlin_myshare.bean.ShareEntity
 import com.jara.kotlin_myshare.interfaces.OnShareListener
 import com.jara.kotlin_myshare.utils.ManifestUtil
 import com.jara.kotlin_myshare.utils.ShareUtil
-import com.jara.myshare.channel.ShareBaseK
 import com.tencent.connect.share.QQShare
 import com.tencent.tauth.IUiListener
 import com.tencent.tauth.Tencent

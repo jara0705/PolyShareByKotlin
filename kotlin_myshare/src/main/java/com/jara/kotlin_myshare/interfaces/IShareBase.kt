@@ -1,4 +1,4 @@
-package com.jara.myshare.interfaces
+package com.jara.kotlin_myshare.interfaces
 
 import com.jara.kotlin_myshare.bean.ShareEntity
 import com.jara.kotlin_myshare.interfaces.OnShareListener

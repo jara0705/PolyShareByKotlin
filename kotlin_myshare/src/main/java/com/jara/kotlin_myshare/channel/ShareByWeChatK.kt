@@ -16,7 +16,6 @@ import com.jara.kotlin_myshare.bean.ShareEntity
 import com.jara.kotlin_myshare.http.Network
 import com.jara.kotlin_myshare.interfaces.OnShareListener
 import com.jara.kotlin_myshare.utils.ManifestUtil
-import com.jara.myshare.channel.ShareBaseK
 import com.tencent.mm.opensdk.modelbase.BaseResp
 import com.tencent.mm.opensdk.modelmsg.*
 import com.tencent.mm.opensdk.openapi.IWXAPI
@@ -57,7 +56,7 @@ class ShareByWeChatK(context: Context) : ShareBaseK(context) {
             val imgUrl = entity!!.imgUrl
             if (!TextUtils.isEmpty(imgUrl)) {
                 if (imgUrl!!.startsWith("http")) {
-                    getNetImage()
+                    getNetImage(imgUrl)
                 } else {
                     if (entity!!.isShareBigImg) {
                         shareImg(getLocalBitmap(imgUrl), listener)
@@ -147,8 +146,8 @@ class ShareByWeChatK(context: Context) : ShareBaseK(context) {
         }
     }
 
-    fun getNetImage(){
-        Network.getService()!!.getImage("")
+    fun getNetImage(imgUrl: String){
+        Network.getService()!!.getImage(imgUrl)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(object:DefaultSubscriber<ResponseBody>(){

@@ -1,7 +1,7 @@
-package com.jara.myshare.channel
+package com.jara.kotlin_myshare.channel
 
 import android.content.Context
-import com.jara.myshare.interfaces.IShareBase
+import com.jara.kotlin_myshare.interfaces.IShareBase
 
 
 /**

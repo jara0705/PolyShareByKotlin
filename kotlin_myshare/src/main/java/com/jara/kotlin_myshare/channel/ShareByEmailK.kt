@@ -8,8 +8,6 @@ import com.jara.kotlin_myshare.bean.Constant
 import com.jara.kotlin_myshare.bean.ShareEntity
 import com.jara.kotlin_myshare.interfaces.OnShareListener
 import com.jara.kotlin_myshare.utils.ShareUtil
-import com.jara.myshare.channel.ShareBaseK
-
 /**
  * Created by Administrator on 2017-9-19.
  */
