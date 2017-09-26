@@ -26,6 +26,7 @@ import io.reactivex.subscribers.DefaultSubscriber
 import okhttp3.ResponseBody
 import java.io.ByteArrayOutputStream
 import java.io.File
+
 /**
  * Created by jara on 2017-9-19.
  */
@@ -146,11 +147,11 @@ class ShareByWeChatK(context: Context) : ShareBaseK(context) {
         }
     }
 
-    fun getNetImage(imgUrl: String){
+    fun getNetImage(imgUrl: String) {
         Network.getService()!!.getImage(imgUrl)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(object:DefaultSubscriber<ResponseBody>(){
+                .subscribe(object : DefaultSubscriber<ResponseBody>() {
                     override fun onComplete() {
                     }
 
@@ -183,7 +184,7 @@ class ShareByWeChatK(context: Context) : ShareBaseK(context) {
                     }
                 } else {
                     if (null != listener) {
-                        listener!!.onShare(channel!!, Constant.SHARE_STATUS_FAILED);
+                        listener!!.onShare(channel!!, Constant.SHARE_STATUS_FAILED)
                     }
                 }
             }
@@ -222,7 +223,7 @@ class ShareByWeChatK(context: Context) : ShareBaseK(context) {
                 val req = SendMessageToWX.Req()
                 req.transaction = System.currentTimeMillis().toString()
                 req.message = wxMediaMessage
-                when(channel) {
+                when (channel) {
                     Constant.SHARE_CHANNEL_WEIXIN_FRIEND -> SendMessageToWX.Req.WXSceneSession
                     Constant.SHARE_CHANNEL_WEIXIN_CIRCLE -> SendMessageToWX.Req.WXSceneTimeline
                 }
