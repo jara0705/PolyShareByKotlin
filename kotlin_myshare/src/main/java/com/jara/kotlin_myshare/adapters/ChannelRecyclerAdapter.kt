@@ -11,6 +11,7 @@ import com.jara.kotlin_myshare.bean.ChannelEntity
 import com.jara.kotlin_myshare.interfaces.IMyItemclickListener
 
 /**
+ * RecyclerView自定义Adapter
  * Created by jara on 2017-9-15.
  */
 class ChannelRecyclerAdapter(var channelEntities: MutableList<ChannelEntity>): RecyclerView.Adapter<ChannelRecyclerAdapter.ViewHolder>()
@@ -31,8 +32,8 @@ class ChannelRecyclerAdapter(var channelEntities: MutableList<ChannelEntity>): R
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
-        var view = LayoutInflater.from(parent!!.context).inflate(R.layout.share_gridview_item, parent, false)
-        var vh = ViewHolder(view)
+        val view = LayoutInflater.from(parent!!.context).inflate(R.layout.share_gridview_item, parent, false)
+        val vh = ViewHolder(view)
         view.setOnClickListener(this)
         return vh
     }
