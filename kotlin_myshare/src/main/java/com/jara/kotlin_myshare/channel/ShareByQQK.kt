@@ -50,7 +50,7 @@ open class ShareByQQK: ShareBaseK{
         }
 
         if (entity.isShareBigImg && !TextUtils.isEmpty(entity.imgUrl) && !entity.imgUrl!!.startsWith("http")) {
-            var params : Bundle? = null
+            val params : Bundle? = null
             params!!.putString(QQShare.SHARE_TO_QQ_IMAGE_LOCAL_URL, entity.imgUrl)
             params!!.putInt(QQShare.SHARE_TO_QQ_KEY_TYPE, QQShare.SHARE_TO_QQ_TYPE_IMAGE)
             params!!.putInt(QQShare.SHARE_TO_QQ_EXT_INT, QQShare.SHARE_TO_QQ_FLAG_QZONE_ITEM_HIDE)

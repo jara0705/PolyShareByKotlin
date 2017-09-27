@@ -24,9 +24,9 @@ object Network {
         return service
     }
 
-    fun initService() {
+    private fun initService() {
         val retrofit = Retrofit.Builder()
-                .baseUrl("http://www.baidu.com")
+                .baseUrl("http://www.baidu.com") //临时填充用
                 .client(OKHttpClientFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build()

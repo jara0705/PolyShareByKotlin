@@ -97,7 +97,7 @@ class ShareDialogActivity : ShareBaseActivity() {
         val gm = GridLayoutManager(this, 3)
         recyclerView.layoutManager = gm
         recyclerView.setHasFixedSize(true)
-        var adapter = ChannelRecyclerAdapter(channelEntities!!)
+        val adapter = ChannelRecyclerAdapter(channelEntities!!)
         recyclerView.adapter = adapter
         adapter.setOnItemClickListener(object: IMyItemclickListener {
             override fun onItemClick(view: View, position: Int) {
@@ -130,35 +130,35 @@ class ShareDialogActivity : ShareBaseActivity() {
         }
     }
 
-    fun shareByQQ() {
+    private fun shareByQQ() {
         ShareUtil.startShare(this, Constant.SHARE_CHANNEL_QQ, getShareData(Constant.SHARE_CHANNEL_QQ), Constant.REQUEST_CODE)
     }
 
-    fun shareByQZone() {
+    private fun shareByQZone() {
         ShareUtil.startShare(this, Constant.SHARE_CHANNEL_QZONE, getShareData(Constant.SHARE_CHANNEL_QZONE), Constant.REQUEST_CODE)
     }
 
-    fun shareByWeixinFriend() {
+    private fun shareByWeixinFriend() {
         ShareUtil.startShare(this, Constant.SHARE_CHANNEL_WEIXIN_FRIEND, getShareData(Constant.SHARE_CHANNEL_WEIXIN_FRIEND), Constant.REQUEST_CODE)
     }
 
-    fun shareByWeixinCircle() {
+    private fun shareByWeixinCircle() {
         ShareUtil.startShare(this, Constant.SHARE_CHANNEL_WEIXIN_CIRCLE, getShareData(Constant.SHARE_CHANNEL_WEIXIN_CIRCLE), Constant.REQUEST_CODE)
     }
 
-    fun shareBySms() {
+    private fun shareBySms() {
         ShareUtil.startShare(this, Constant.SHARE_CHANNEL_SMS, getShareData(Constant.SHARE_CHANNEL_SMS), Constant.REQUEST_CODE)
     }
 
-    fun shareByEmail() {
+    private fun shareByEmail() {
         ShareUtil.startShare(this, Constant.SHARE_CHANNEL_EMAIL, getShareData(Constant.SHARE_CHANNEL_EMAIL), Constant.REQUEST_CODE)
     }
 
-    fun shareBySystem() {
+    private fun shareBySystem() {
         ShareUtil.startShare(this, Constant.SHARE_CHANNEL_SYSTEM, getShareData(Constant.SHARE_CHANNEL_SYSTEM), Constant.REQUEST_CODE)
     }
 
-    fun getShareData(shareChannel: Int): ShareEntity? {
+    private fun getShareData(shareChannel: Int): ShareEntity? {
         if (entity != null) {
             return entity as ShareEntity
         }
